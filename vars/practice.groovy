@@ -1,8 +1,5 @@
 def call (String Goal){
-if ("${Goal}" == "clean"){
-sh "mvn clean"
-}
-elif ("${Goal}" == "build"){
+if ("${Goal}" == "build"){
 sh "mvn package"
 }
 elif ("${Goal}" == "test"){
