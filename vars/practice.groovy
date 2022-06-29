@@ -2,10 +2,10 @@ def call (String Goal){
 if ("${Goal}" == "build"){
 sh "mvn package"
 }
-elif ("${Goal}" == "test"){
+else if ("${Goal}" == "test"){
 sh "mvn sonar:sonar"
 }
-elif ("${Goal}" == "backup"){
+else if ("${Goal}" == "backup"){
 sh "mvn deploy"
 }
 }
